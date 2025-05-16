@@ -36,15 +36,17 @@ const Hero = () => {
           rates, annual fees.
         </p>
       </div>
-      <div className="flex-1">
+      <div
+        className={`relative flex-1 flex flex-col md:${styles.flexCenter} md:my-0 my-10`}
+      >
         <img
           src={robot}
           alt="Hero"
           className="w-[100%] h-[100%] relative z-[5]"
         />
-        <div className="absolute w-[40%] h-[35%]  z-[0] top-0 pink__gradient" />
-        <div className="w-[80%] h-[80%] absolute z-[1] rounded-full white__gradient" />
-        <div className="w-[50%] h-[50%] absolute z-0 right-20 bottom-20 blue__gradient" />
+        <div className="absolute w-[40%] h-[35%]  z-[0] top-0 left-0 pink__gradient" />
+        <div className="absolute w-[80%] h-[80%]  z-[1] top-0 left-[30%] white__gradient rounded-full" />
+        <div className="w-[50%] h-[50%] absolute right-20 z-[0] bottom-10 blue__gradient" />
         <div className={`sm:hidden ${styles.flexCenter}`}>
           <GetStarted />
         </div>
